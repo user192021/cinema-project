@@ -11,20 +11,29 @@ body{
     margin: auto;
 }
 .header {
+    padding-bottom: 60px;
     min-height: 100vh;
     background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), 
     url('../img/bg.jpg') no-repeat center top / cover;
 }
+.m-menu {
+    display: none;
+}
+
 .navbar {
     display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.nav {
+    position: relative;
 }
 .menu {
     list-style-type: none;
     display: flex;
     margin: 0;
     margin-left: 17px;
+   
 }
 .menu-item {
     margin-right: 25px;
@@ -154,7 +163,7 @@ body{
     margin-top: 15px;
 }
 .select-cinema {
-    min-width: 470px;
+    width: 470px;
 }
 .scheme-svg {
     max-width: 1170px;
@@ -163,6 +172,7 @@ body{
     background: rgba(36, 36, 36, 0.18);
     border-radius: 10px;
     margin-bottom: 40px;
+    overflow-x: auto;
 }
 .scheme path:not(.light) {
     fill: rgba(255, 255, 255, 0.2);
@@ -185,7 +195,7 @@ body{
     display: flex;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-    /*min-width: 1024px;*/
+    min-width: 1024px;
     margin: auto;
     width: 90%;
     padding-top: 22px;
@@ -342,4 +352,7 @@ body{
     .price-tag {
         font-size: 35px;
     }
+}
+option {
+background-color: black;
 }
